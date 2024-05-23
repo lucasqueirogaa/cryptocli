@@ -5,8 +5,8 @@ const pkg = require("../package.json");
 
 program.version(pkg.version);
 
-program.command("key", "Manage API Key2 -- Get at https://cryptocompare.com");
+program.command("key", "Manage API Key -- Get at https://cryptocompare.com");
 
-program.command("keytest", "Teste our functions 2");
+program.command("check", "Check Coin Price Info");
 
 program.parse(process.argv);
