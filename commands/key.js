@@ -13,7 +13,7 @@ const key = {
       validate: isRequired,
     });
 
-    const key = keyManager.setKey(input.key);
+    const key = keyManager.setKey(input.key, "apiKey");
 
     if (key) {
       console.log("Api Key Set".blue);
@@ -22,7 +22,7 @@ const key = {
   show() {
     try {
       const keyManager = new KeyManager();
-      const key = keyManager.getKey();
+      const key = keyManager.getKey("apiKey");
 
       console.log(`Current Api Key: ${key.yellow}`);
 
@@ -34,7 +34,7 @@ const key = {
   remove() {
     try {
       const keyManager = new KeyManager();
-      keyManager.deleteKey();
+      keyManager.deleteKey("apiKey");
 
       console.log("Key removed".blue);
 
