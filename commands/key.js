@@ -26,13 +26,22 @@ const key = {
 
       console.log(`Current Api Key: ${key.yellow}`);
 
-      return key
+      return key;
     } catch (error) {
-      console.log(error.message.red)
+      console.log(error.message.red);
     }
   },
   remove() {
-    console.log("Hello from remove");
+    try {
+      const keyManager = new KeyManager();
+      keyManager.deleteKey();
+
+      console.log("Key removed".blue);
+
+      return;
+    } catch (error) {
+      console.log(error.message.red);
+    }
   },
 };
 
