@@ -10,17 +10,26 @@ const key = {
       type: "input",
       name: "key",
       message: "Enter Your Api Key".green + "https://cryptocompare.com",
-      validate: isRequired
+      validate: isRequired,
     });
 
     const key = keyManager.setKey(input.key);
-  
-    if(key) {
-      console.log("Api Key Set".blue)
+
+    if (key) {
+      console.log("Api Key Set".blue);
     }
   },
   show() {
-    console.log("Hello from show");
+    try {
+      const keyManager = new KeyManager();
+      const key = keyManager.getKey();
+
+      console.log(`Current Api Key: ${key.yellow}`);
+
+      return key
+    } catch (error) {
+      console.log(error.message.red)
+    }
   },
   remove() {
     console.log("Hello from remove");
