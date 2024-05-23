@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "bin": "./bin/cryptocli.js",
+  "type": "commonjs",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -14,7 +15,7 @@
     "axios": "^1.7.2",
     "colors": "^1.4.0",
     "commander": "^12.1.0",
-    "configstore": "^6.0.0",
-    "inquirer": "^9.2.22"
+    "configstore": "^5.0.0",
+    "inquirer": "^8.0.0"
   }
 }

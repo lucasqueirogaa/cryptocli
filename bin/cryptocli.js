@@ -1,6 +1,12 @@
 #!/usr/bin/env node
-const program = require("commander");
+const { Command } = require("commander");
+const program = new Command();
+const pkg = require("../package.json");
 
-program.version("1.0.0").parse(process.argv);
+program.version(pkg.version);
 
-console.log("Hello from bin 2");
+program.command("key", "Manage API Key2 -- Get at https://cryptocompare.com");
+
+program.command("keytest", "Teste our functions 2");
+
+program.parse(process.argv);
