@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "bin": "./bin/cryptocli.ts",
+  "bin": "./bin/cryptocli.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -16,13 +16,5 @@
     "commander": "^12.1.0",
     "configstore": "^6.0.0",
     "inquirer": "^9.2.22"
-  },
-  "devDependencies": {
-    "@types/axios": "^0.14.0",
-    "@types/colors": "^1.2.1",
-    "@types/commander": "^2.12.2",
-    "@types/configstore": "^6.0.2",
-    "@types/inquirer": "^9.0.7",
-    "typescript": "^5.4.5"
   }
 }
