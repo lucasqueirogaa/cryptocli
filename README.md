@@ -8,7 +8,7 @@ The things you need before installing the software.
 
 * Node
 * Npm
-* API key on (It's free): https://min-api.cryptocompare.com/pricing
+* API key (It's free): https://min-api.cryptocompare.com/pricing
 
 ### Installation
 
