@@ -16,7 +16,7 @@ program
 
 program
   .command("top")
-  .description("Get price of top 10 cryptos by volume on all crypto markets")
+  .description("Get the price of top 10 cryptos by trading volume across all markets")
   .option("--cur <currency>", "Change the current (Only one)", "USD")
   .action((cmd) => check.top(cmd));
 
