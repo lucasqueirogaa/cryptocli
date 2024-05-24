@@ -1,4 +1,4 @@
-# Project Title
+# Cryptocli
 
 This is a crypto price CLI created with Node.js and JavaScript. You can get the price by crypto, by currency, and get the top 10 cryptos by trade volume across markets.
 
