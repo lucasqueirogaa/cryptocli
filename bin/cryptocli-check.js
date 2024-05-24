@@ -14,4 +14,10 @@ program
   .option("--cur <currency>", "Change the current", "USD,BRL,EUR")
   .action((cmd) => check.price(cmd));
 
+program
+  .command("top")
+  .description("Get price of top 10 cryptos by volume on all crypto markets")
+  .option("--cur <currency>", "Change the current (Only one)", "USD")
+  .action((cmd) => check.top(cmd));
+
 program.parse(process.argv);
